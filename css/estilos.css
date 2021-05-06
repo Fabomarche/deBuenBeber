@@ -1,0 +1,214 @@
+
+/*--------------GLOBAL--------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(111deg, rgba(63,63,65,1) 0%, rgba(37,37,37,1) 100%);
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+                        "h h h"
+                        "m m m"
+                        "f f f";
+    justify-content: space-between;
+    
+          
+    }
+
+/*--------------FIN GLOBAL--------------------*/
+
+
+/*---------------HEADER----------------------*/
+
+.headerBootstrap{
+    grid-area: h;
+    width: 100%;
+    height: auto;
+    z-index: 10000;
+    box-shadow: 0px 3px 25px black;
+}
+
+.bg-dark {
+    background-color: #1f1f1f!important;
+}
+
+.navbar{
+    padding: 0;
+}
+
+.logo {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding-left: 15%;
+}
+
+.navbar-toggler {
+    margin-right: 5%;
+}
+
+.navbar-toggler-icon {
+    color: #dcb88a;
+}
+
+.navbar-dark .navbar-toggler {
+    color: #dcb88a;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #dcb88a;
+}
+.navbar-nav .nav-link {
+    padding-left: 2%;
+    font-family: "Constructa", Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-control {
+    margin-bottom: 1%;
+    margin-left: 2%;
+}
+
+.btn {
+    font-family: "Constructa", Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    color: #dcb88a;
+    border-color: #dcb88a;
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+
+
+.btn:hover {
+    background-color: #dcb88a;
+    border-color: #dcb88a;
+    color:  #1f1f1f;
+}
+/*---------------FIN HEADER----------------------*/
+
+
+/*MAIN: está en estilo2.scss*/
+
+/*VIDEOS: está en estilo2.scss*/
+
+
+/*-----------BEBIDAS--------*/
+
+.btn-success{
+    background-color: transparent;
+}
+
+h5 {
+    text-align: center;
+}
+
+.cardsgroup {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    width: 50%;
+    height: auto;
+    margin-bottom: 5%;
+    box-shadow: 0px 1px 25px black;
+}
+
+/*-----------------------MERCH-----------------------*/
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgb(146, 121, 84);
+}
+
+h2 {
+    margin-top: 25px;
+    color:#dcb88a;
+    font-family: "Constructa", Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+.fotosMerch {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotosMerch img {
+    padding: 2px;
+}
+
+
+
+
+a {
+    color:#dcb88a;
+    font-family: "Constructa", Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+    text-decoration: none;
+}
+
+/*---------------FIN MERCH----------------------*/
+
+
+/*CONTACTO: está en estilo2.scss*/
+
+
+
+/*FOOTER: está en estilo2.scss*/
+
+
+
+/*-------------------------------------MEDIA QUERIES-------------------------------*/
+
+
+
+/*------------TABLETS-------------------*/
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+
+/*----------HEADER-------------*/
+.navbar-nav .nav-link {
+    font-size: 1.75rem;
+}
+}
+/*------------FIN TABLETS-------------------*/
+
+
+
+/*------------ESCRITORIO-------------------*/
+@media only screen and (min-width: 992px) and (max-width: 1920px) {
+
+/*------------------HEADER-------------*/
+
+.navbar-nav .nav-link {
+    font-size: 2rem;
+}
+
+}
+
+/*---------------BEBIDAS-------------*/
+.cardsgroup {
+    width: 55%;
+}
+
+/*------------FIN ESCRITORIO-------------------*/
+
