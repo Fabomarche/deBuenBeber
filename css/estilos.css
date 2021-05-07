@@ -23,6 +23,7 @@ body {
           
     }
 
+ 
 /*--------------FIN GLOBAL--------------------*/
 
 
@@ -73,7 +74,7 @@ body {
 }
 .navbar-nav .nav-link {
     padding-left: 2%;
-    font-family: "Constructa", Georgia, 'Times New Roman', Times, serif;
+    font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif;
 }
 
 .form-control {
@@ -82,7 +83,7 @@ body {
 }
 
 .btn {
-    font-family: "Constructa", Georgia, 'Times New Roman', Times, serif;
+    font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
     color: #dcb88a;
@@ -111,23 +112,32 @@ body {
     background-color: transparent;
 }
 
+.card .btn {
+    height: fit-content;
+}
+
 h5 {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .cardsgroup {
     width: 75%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+
 }
 
 .card {
     width: 50%;
     height: auto;
     margin-bottom: 5%;
+    margin-right: 3%;
     box-shadow: 0px 1px 25px black;
+    
 }
+
 
 /*-----------------------MERCH-----------------------*/
 
@@ -135,10 +145,16 @@ h5 {
     background-color: rgb(146, 121, 84);
 }
 
+
+.carousel-item img {
+    border-radius: 10%;
+
+}
+
 h2 {
     margin-top: 25px;
     color:#dcb88a;
-    font-family: "Constructa", Georgia, 'Times New Roman', Times, serif;
+    font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
 }
 
@@ -153,14 +169,19 @@ h2 {
 
 .fotosMerch img {
     padding: 2px;
+    transition: transform .2s;
+    border-radius: 10%;
 }
 
-
+.fotosMerch img:hover {
+    transform: scale(1.1);
+    z-index: 1000;
+}
 
 
 a {
     color:#dcb88a;
-    font-family: "Constructa", Georgia, 'Times New Roman', Times, serif;
+    font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
     letter-spacing: 0.06rem;
     text-decoration: none;
@@ -189,6 +210,11 @@ a {
 .navbar-nav .nav-link {
     font-size: 1.75rem;
 }
+
+/*---------------BEBIDAS-------------*/
+.cardsgroup {
+    justify-content: center;
+}
 }
 /*------------FIN TABLETS-------------------*/
 
@@ -202,13 +228,14 @@ a {
 .navbar-nav .nav-link {
     font-size: 2rem;
 }
-
-}
-
 /*---------------BEBIDAS-------------*/
 .cardsgroup {
     width: 55%;
+    justify-content: space-between;
 }
 
 /*------------FIN ESCRITORIO-------------------*/
+
+
+}
 

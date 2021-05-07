@@ -13,14 +13,13 @@ main {
   main h1 {
     color: #dcb88a;
     text-align: center;
-    font-family: "Constructa", Georgia, 'Times New Roman', Times, serif;
+    font-family: "ConstructaBlack", Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    letter-spacing: 1rem;
-    font-weight: bold; }
+    letter-spacing: 1rem; }
   main #titulo {
     font-size: 2rem;
     margin-top: 3%;
-    margin-bottom: 5%; }
+    margin-bottom: 3%; }
   main .tituloSection {
     margin-top: 15px;
     font-size: 3rem;
@@ -35,17 +34,17 @@ main {
       min-width: 360px; }
   main p {
     color: white;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    margin-top: 5%; }
+    margin-top: 3%;
+    margin-bottom: 3%; }
   main .suscribiteBoton {
     font-size: 3rem;
     margin-top: 3%;
     background-color: #dcb88a;
     color: #2e2e2e;
     border-radius: 1.5rem;
-    font-family: "Constructa", Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
+    font-family: "ConstructaBlack", Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
     font-size: 2rem;
     width: auto;
@@ -90,7 +89,7 @@ main {
 
 #mainContacto .formulario {
   width: 100%;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #dcb88a;
   line-height: 1.25rem;
   text-align: center;
@@ -115,8 +114,7 @@ main {
     #mainContacto .formulario fieldset .botones {
       background-color: #dcb88a;
       color: #2e2e2e;
-      font-family: "Constructa", Georgia, 'Times New Roman', Times, serif;
-      font-weight: bold;
+      font-family: "ConstructaBlack", Georgia, 'Times New Roman', Times, serif;
       font-size: 2rem;
       width: 33%;
       padding-top: 10px;
@@ -139,7 +137,7 @@ footer {
   footer #footerP {
     margin: 0;
     color: #a5a5a5;
-    font-family: "Constructa", Georgia, 'Times New Roman', Times, serif; }
+    font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif; }
   footer #footerP:hover {
     color: #dcb88a;
     transition: 0.5s; }
@@ -175,7 +173,7 @@ footer {
     align-items: center; }
     footer #footerP {
       font-size: 0.75rem;
-      font-family: "Constructa", Georgia, 'Times New Roman', Times, serif; } }
+      font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif; } }
 
 /*------------FIN TABLETS-------------------*/
 /*------------ESCRITORIO-------------------*/
@@ -205,4 +203,6 @@ footer {
 /*------------ESCRITORIO-------------------*/
 @media only screen and (min-width: 1330px) and (max-width: 1920px) {
   #titulo, .tituloContacto, .tituloSection {
-    font-size: 5rem !important; } }
+    font-size: 5rem !important; }
+  footer {
+    height: 125%; } }
