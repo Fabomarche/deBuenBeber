@@ -82,7 +82,7 @@ body {
     margin-left: 2%;
 }
 
-.btn {
+header .btn {
     font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
@@ -113,7 +113,24 @@ body {
 }
 
 .card .btn {
+    font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    color: #dcb88a;
+    border-color: #1f1f1f;
     height: fit-content;
+}
+
+.card .btn-success {
+    color:  #1f1f1f;
+    background-color: #dcb88a;
+    border-color: #1f1f1f; 
+}
+
+.card .btn:hover{
+    color:  #1f1f1f;
+    background-color: #dcb88a;
+    border-color: #1f1f1f;
 }
 
 h5 {
@@ -174,8 +191,9 @@ h2 {
 }
 
 .fotosMerch img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     z-index: 1000;
+   
 }
 
 
@@ -211,10 +229,7 @@ a {
     font-size: 1.75rem;
 }
 
-/*---------------BEBIDAS-------------*/
-.cardsgroup {
-    justify-content: center;
-}
+
 }
 /*------------FIN TABLETS-------------------*/
 
@@ -227,11 +242,6 @@ a {
 
 .navbar-nav .nav-link {
     font-size: 2rem;
-}
-/*---------------BEBIDAS-------------*/
-.cardsgroup {
-    width: 55%;
-    justify-content: space-between;
 }
 
 /*------------FIN ESCRITORIO-------------------*/

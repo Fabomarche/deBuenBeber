@@ -19,11 +19,16 @@ main {
   main #titulo {
     font-size: 2rem;
     margin-top: 3%;
-    margin-bottom: 3%; }
+    margin-bottom: 3%;
+    transition-property: text-shadow;
+    transition-duration: 0.5s; }
+  main #titulo:hover, main .tituloSection:hover {
+    text-shadow: 2px 2px 50px black; }
   main .tituloSection {
     margin-top: 15px;
     font-size: 3rem;
-    letter-spacing: 0.5rem; }
+    letter-spacing: 0.5rem;
+    transition-duration: 0.5s; }
     main .tituloSection span {
       font-size: 4rem; }
   main .videoindex {
@@ -38,6 +43,12 @@ main {
     text-align: center;
     margin-top: 3%;
     margin-bottom: 3%; }
+    main p span {
+      font-weight: bolder;
+      transition-property: color;
+      transition-duration: 0.5s; }
+    main p span:hover {
+      color: #dcb88a; }
   main .suscribiteBoton {
     font-size: 3rem;
     margin-top: 3%;
@@ -85,7 +96,13 @@ main {
 #mainContacto .tituloContacto {
   margin-top: 3%;
   font-size: 3rem;
-  letter-spacing: 0.5rem; }
+  letter-spacing: 0.5rem;
+  transition-property: text-shadow, font-size;
+  transition-duration: 1s; }
+
+#mainContacto .tituloContacto:hover {
+  text-shadow: 2px 2px 50px black;
+  font-size: 3.5rem; }
 
 #mainContacto .formulario {
   width: 100%;
@@ -116,11 +133,13 @@ main {
       color: #2e2e2e;
       font-family: "ConstructaBlack", Georgia, 'Times New Roman', Times, serif;
       font-size: 2rem;
-      width: 33%;
+      width: 25%;
       padding-top: 10px;
       padding-bottom: 10px;
       margin: 5%;
-      transition: 0.5s; }
+      border-radius: 20%;
+      transition: 1s;
+      border: none; }
     #mainContacto .formulario fieldset .botones:hover {
       transform: scale(1.2, 1.2); }
 
@@ -137,26 +156,33 @@ footer {
   footer #footerP {
     margin: 0;
     color: #a5a5a5;
-    font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif; }
+    font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif;
+    transition-property: color;
+    transition-duration: 1s; }
   footer #footerP:hover {
-    color: #dcb88a;
-    transition: 0.5s; }
+    color: #dcb88a; }
   footer #footerLinks a {
-    color: rgba(255, 255, 255, 0.55); }
+    color: rgba(255, 255, 255, 0.55);
+    transition-property: color;
+    transition-duration: 0.5s; }
   footer #footerLinks a:hover {
-    color: #dcb88a;
-    transition: 0.5s; }
+    color: #dcb88a; }
   footer #redes {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around; }
+    footer #redes .icon {
+      stroke: rgba(255, 255, 255, 0.55);
+      transition-property: stroke;
+      transition-duration: 0.25s; }
+    footer #redes .icon:hover {
+      stroke: #dcb88a;
+      width: 105%;
+      height: auto; }
     footer #redes a {
       padding: 5px;
       transition: 0.5s; }
-    footer #redes a:hover {
-      background-color: #dcb88a;
-      transition: 1s; }
 
 /*-------------------------------------MEDIA QUERIES-------------------------------*/
 /*------------TABLETS-------------------*/
@@ -185,8 +211,8 @@ footer {
     width: 100%;
     min-width: 697px;
     min-height: 392px; }
-  main p {
-    font-size: 1.5rem; }
+  main #pMain {
+    font-size: 2rem; }
   main .suscribiteBoton {
     font-size: 2.5rem;
     padding: 1% 2.5% 1% 2.5%; }

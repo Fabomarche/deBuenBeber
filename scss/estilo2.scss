@@ -11,6 +11,7 @@ main{
     flex-direction: column;
     align-items: center;
 
+    
     #fotoFaboBufe {
         width: 100%;
         box-shadow: 0px 2px 50px black;
@@ -28,16 +29,29 @@ main{
         font-size: 2rem;
         margin-top: 3%;
         margin-bottom: 3%;
+        transition-property: text-shadow;
+        transition-duration: 0.5s;
+        
+    }
+
+    #titulo:hover{
+        text-shadow: 2px 2px 50px black;
+       
     }
 
     .tituloSection{
         margin-top: 15px;    
         font-size: 3rem;
         letter-spacing: 0.5rem;
+        transition-duration: 0.5s;
         
         span {
             font-size: 4rem;
         }
+    }
+
+    .tituloSection:hover{
+        @extend #titulo:hover;
     }
 
     .videoindex{
@@ -56,6 +70,18 @@ main{
         text-align: center;
         margin-top: 3%;
         margin-bottom: 3%;
+
+        span{
+            font-weight: bolder;
+            transition-property: color;
+            transition-duration: 0.5s;
+
+        }
+
+        span:hover{
+            color: $colorDBB;     
+            
+        }
     }
 
     .suscribiteBoton {
@@ -125,6 +151,13 @@ main{
         margin-top: 3%;
         font-size: 3rem;
         letter-spacing: 0.5rem;
+        transition-property: text-shadow, font-size;
+        transition-duration: 1s;
+    }
+
+    .tituloContacto:hover{
+        text-shadow: 2px 2px 50px black;
+        font-size: 3.5rem;
     }
     
     .formulario {
@@ -162,11 +195,13 @@ main{
                 color: rgb(46, 46, 46);
                 font-family: "ConstructaBlack", Georgia, 'Times New Roman', Times, serif;
                 font-size: 2rem;
-                width: 33%;
+                width: 25%;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 margin: 5%;
-                transition: 0.5s
+                border-radius: 20%;
+                transition: 1s;
+                border:none;
                 
                 
             }
@@ -196,22 +231,26 @@ footer {
         margin: 0;
         color: rgb(165, 165, 165);
         font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif;
+        transition-property: color;
+        transition-duration: 1s;
     }
 
     #footerP:hover{
         color: $colorDBB;
-        transition: 0.5s
+        
     }
 
     #footerLinks{
         a{
             color: rgba(255,255,255,.55);
-            
-        }
+            transition-property: color;
+            transition-duration: 0.5s;
+                    }
         
         a:hover{
             color: $colorDBB;
-            transition: 0.5s
+            
+            
         }
         
     }
@@ -222,18 +261,23 @@ footer {
         align-items: center;
         justify-content: space-around;
         
-        
+        .icon{
+            stroke:rgba(255,255,255,.55);
+            transition-property: stroke;
+            transition-duration: 0.25s;
+        }
+
+        .icon:hover {
+            stroke: $colorDBB;
+            width: 105%;
+            height: auto;
+        }
 
         a{
             padding: 5px; 
             transition: 0.5s
         }
-
-        a:hover {
-            background-color:  $colorDBB;
-            transition: 1s
-        }
-
+       
     }
 
 }
@@ -291,8 +335,8 @@ footer {
         }
         
         
-        p{
-            font-size: 1.5rem;
+        #pMain{
+            font-size: 2rem;
         }
         
         .suscribiteBoton{
