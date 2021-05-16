@@ -123,11 +123,15 @@ main {
     position: relative; }
     #mainContacto .formulario fieldset input {
       width: 50%;
-      text-align: center; }
+      text-align: center;
+      background-color: #c4c4c4; }
     #mainContacto .formulario fieldset textarea {
       margin-top: 5%;
       width: 75%;
-      height: auto; }
+      height: auto;
+      background-color: #c4c4c4; }
+    #mainContacto .formulario fieldset ::placeholder {
+      color: #1f2029; }
     #mainContacto .formulario fieldset .botones {
       background-color: #dcb88a;
       color: #2e2e2e;
@@ -230,5 +234,7 @@ footer {
 @media only screen and (min-width: 1330px) and (max-width: 1920px) {
   #titulo, .tituloContacto, .tituloSection {
     font-size: 5rem !important; }
+    #titulo span, .tituloContacto span, .tituloSection span {
+      font-size: 7rem !important; }
   footer {
     height: 125%; } }

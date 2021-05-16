@@ -147,6 +147,7 @@ main{
 /*--------------CONTACTO-----------------*/
 
 #mainContacto {
+    
     .tituloContacto{
         margin-top: 3%;
         font-size: 3rem;
@@ -182,13 +183,22 @@ main{
             input {
                 width: 50%;
                 text-align: center;  
+                background-color: rgb(196, 196, 196);
              }
 
-             textarea {
+            textarea {
                 margin-top: 5%;
                 width: 75%;
                 height: auto;
+                background-color: rgb(196, 196, 196);
+              
             }
+
+            ::placeholder{
+                color: rgb(31, 32, 41);
+                
+            }
+          
 
             .botones {
                 background-color: $colorDBB;
@@ -364,6 +374,11 @@ footer {
 @media only screen and (min-width: 1330px) and (max-width: 1920px) {
     #titulo, .tituloContacto, .tituloSection {
         font-size: 5rem!important;
+            span{
+                font-size: 7rem!important;
+            }
+
+    
     }
     
     footer{

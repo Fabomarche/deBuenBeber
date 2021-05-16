@@ -10,7 +10,8 @@
 }
 
 body {
-    background: linear-gradient(111deg, rgba(63,63,65,1) 0%, rgba(37,37,37,1) 100%);
+    background: linear-gradient(45deg, rgb(85, 79, 71) 0%, rgb(31, 32, 41) 100%);
+    background-size: 400%;
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
     grid-template-rows: auto auto auto;
@@ -19,11 +20,17 @@ body {
                         "m m m"
                         "f f f";
     justify-content: space-between;
-    
+    animation: bg-animation 5s infinite alternate;
+       
           
     }
 
- 
+@keyframes  bg-animation{
+    0%{background-position: left;}
+    100%{background-position: right;}
+    
+}  
+
 /*--------------FIN GLOBAL--------------------*/
 
 
@@ -110,7 +117,10 @@ header .btn {
 
 .btn-success{
     background-color: transparent;
+    
 }
+
+
 
 .card .btn {
     font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif;
@@ -158,6 +168,11 @@ h5 {
 
 /*-----------------------MERCH-----------------------*/
 
+.slide {
+    width: 100%;
+    height: auto;
+}
+
 .carousel-indicators [data-bs-target] {
     background-color: rgb(146, 121, 84);
 }
@@ -165,14 +180,19 @@ h5 {
 
 .carousel-item img {
     border-radius: 10%;
-
 }
 
-h2 {
+.h2Merch {
     margin-top: 25px;
     color:#dcb88a;
     font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
+    transition-duration: 1s;
+}
+
+.h2Merch:hover{
+    text-shadow: 2px 2px 50px black;
+    font-size: 3.5rem;
 }
 
 .fotosMerch {
@@ -185,6 +205,7 @@ h2 {
 }
 
 .fotosMerch img {
+    min-height: auto;
     padding: 2px;
     transition: transform .2s;
     border-radius: 10%;
@@ -193,6 +214,7 @@ h2 {
 .fotosMerch img:hover {
     transform: scale(1.05);
     z-index: 1000;
+    box-shadow: 0px 1px 25px black;
    
 }
 
