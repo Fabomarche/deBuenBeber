@@ -6,10 +6,16 @@ main {
   grid-area: m;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  background-image: url("..//images/textures/buried.png"); }
   main #fotoFaboBufe {
     width: 100%;
-    box-shadow: 0px 2px 50px black; }
+    box-shadow: 0px 2px 50px black;
+    filter: grayscale(10%);
+    transition: 2s; }
+  main #fotoFaboBufe:hover {
+    width: 105%;
+    filter: grayscale(0%); }
   main h1 {
     color: #dcb88a;
     text-align: center;
@@ -49,9 +55,15 @@ main {
       transition-duration: 0.5s; }
     main p span:hover {
       color: #dcb88a; }
+  main h3 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 0.8rem; }
   main .suscribiteBoton {
     font-size: 3rem;
-    margin-top: 3%;
+    margin-top: 1%;
     background-color: #dcb88a;
     color: #2e2e2e;
     border-radius: 1.5rem;
@@ -60,12 +72,25 @@ main {
     font-size: 2rem;
     width: auto;
     padding: 2% 5% 2% 5%;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     transition: 0.5s; }
   main .suscribiteBoton:hover {
     background-color: #f82121;
     color: #fafafa;
     transform: scale(1.2, 1.2); }
+  main .containerCafecito {
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    background-color: #3a354660;
+    padding: 2%;
+    border-radius: 25px;
+    align-items: center; }
+    main .containerCafecito .cafecito {
+      margin-left: 10px;
+      transition: 2s; }
+    main .containerCafecito .cafecito:hover {
+      filter: invert(1); }
 
 /*---------------VIDEOS---------------------*/
 #videosContenedor {
@@ -100,19 +125,18 @@ main {
   transition-property: text-shadow, font-size;
   transition-duration: 1s; }
 
-#mainContacto .tituloContacto:hover {
-  text-shadow: 2px 2px 50px black;
-  font-size: 3.5rem; }
-
 #mainContacto .formulario {
-  width: 100%;
+  width: 75%;
   font-family: 'Montserrat', sans-serif;
   color: #dcb88a;
   line-height: 1.25rem;
   text-align: center;
   line-height: 2.5rem;
-  padding: 25px;
-  border: none; }
+  margin: 25px;
+  border: none;
+  background-color: #40404125;
+  border-radius: 5%;
+  box-shadow: 2px 2px 50px black; }
   #mainContacto .formulario fieldset {
     display: flex;
     flex-direction: column;
@@ -129,7 +153,8 @@ main {
       margin-top: 5%;
       width: 75%;
       height: auto;
-      background-color: #c4c4c4; }
+      background-color: #c4c4c4;
+      font-size: 1rem; }
     #mainContacto .formulario fieldset ::placeholder {
       color: #1f2029; }
     #mainContacto .formulario fieldset .botones {
@@ -138,12 +163,12 @@ main {
       font-family: "ConstructaBlack", Georgia, 'Times New Roman', Times, serif;
       font-size: 2rem;
       width: 25%;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      margin: 5%;
-      border-radius: 20%;
+      min-width: fit-content;
+      margin: 2%;
+      border-radius: 20px;
       transition: 1s;
-      border: none; }
+      border: none;
+      padding: 10px 10px 10px 10px; }
     #mainContacto .formulario fieldset .botones:hover {
       transform: scale(1.2, 1.2); }
 
@@ -196,6 +221,8 @@ footer {
     font-size: 3rem; }
   main p {
     font-size: 1.25rem; }
+  main h3 {
+    font-size: 1rem; }
   /*-----------FOOTER-------------*/
   footer {
     flex-direction: row;
@@ -220,6 +247,11 @@ footer {
   main .suscribiteBoton {
     font-size: 2.5rem;
     padding: 1% 2.5% 1% 2.5%; }
+  main h3 {
+    font-size: 2rem; }
+  /*-----------CONTACTO-----------*/
+  #mainContacto .formulario fieldset textarea {
+    font-size: 2rem !important; }
   /*-----------FOOTER-------------*/
   footer {
     flex-direction: row;
@@ -236,5 +268,11 @@ footer {
     font-size: 5rem !important; }
     #titulo span, .tituloContacto span, .tituloSection span {
       font-size: 7rem !important; }
+  /*-----------CONTACTO-----------*/
+  #mainContacto .tituloContacto:hover {
+    text-shadow: 2px 2px 50px black;
+    font-size: 7rem !important; }
+  #mainContacto .formulario fieldset textarea {
+    font-size: 2rem !important; }
   footer {
     height: 125%; } }
