@@ -207,6 +207,7 @@ h5 {
 }
 
 .fotosMerch img {
+    max-width: 624px;
     min-height: auto;
     padding: 2px;
     transition: transform .2s;

@@ -134,9 +134,9 @@ main {
   line-height: 2.5rem;
   margin: 25px;
   border: none;
-  background-color: #40404125;
   border-radius: 5%;
-  box-shadow: 2px 2px 50px black; }
+  box-shadow: 2px 2px 50px black;
+  background: url("..//images/fondobirras.jpg"); }
   #mainContacto .formulario fieldset {
     display: flex;
     flex-direction: column;
