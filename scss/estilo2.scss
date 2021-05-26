@@ -532,7 +532,7 @@ main{
             }
             
             input {
-                width: 50%;
+                width: 100%;
                 text-align: center;  
                 background-color: rgb(196, 196, 196);
              }
@@ -670,6 +670,16 @@ footer {
         }
     }
 
+    #mainContacto {
+        .formulario {
+            fieldset {
+                input {
+                    width: 75%;
+                } 
+            }
+        }
+    }
+
     /*-----------FOOTER-------------*/
     footer{
         flex-direction: row;
@@ -719,6 +729,15 @@ footer {
         }
     }
 
+    #mainContacto {
+        .formulario {
+            fieldset {
+                input {
+                    width: 50%;
+                } 
+            }
+        }
+    }
     /*-----------CONTACTO-----------*/
 
     #mainContacto{
