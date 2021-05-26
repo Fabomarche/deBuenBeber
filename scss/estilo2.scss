@@ -539,7 +539,7 @@ main{
 
             textarea {
                 margin-top: 5%;
-                width: 75%;
+                width: 100%;
                 height: auto;
                 background-color: rgb(196, 196, 196);
                 font-size: 1rem;
@@ -676,6 +676,10 @@ footer {
                 input {
                     width: 75%;
                 } 
+                textarea{
+                    width: 75%;
+                    font-size: 2rem!important;
+                }
             }
         }
     }
@@ -729,22 +733,17 @@ footer {
         }
     }
 
-    #mainContacto {
-        .formulario {
-            fieldset {
-                input {
-                    width: 50%;
-                } 
-            }
-        }
-    }
+
     /*-----------CONTACTO-----------*/
 
     #mainContacto{
-       
         .formulario{
             fieldset{
+                input {
+                    width: 50%;
+                } 
                 textarea{
+                    width: 75%;
                     font-size: 2rem!important;
                 }
             }
@@ -793,20 +792,9 @@ footer {
         }
 
 
-        .formulario{
-            fieldset{
-                textarea{
-                    font-size: 2rem!important;
-                }
-            }
-
-        }
-
-     
-    }
-
-
+       
     footer{
         height: 125%;
     }
+}
 }

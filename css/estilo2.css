@@ -309,7 +309,7 @@ main {
     background-color: #c4c4c4; }
   #mainContacto .formulario textarea {
     margin-top: 5%;
-    width: 75%;
+    width: 100%;
     height: auto;
     background-color: #c4c4c4;
     font-size: 1rem; }
@@ -383,6 +383,9 @@ footer {
     font-size: 1rem; }
   #mainContacto .formulario fieldset input {
     width: 75%; }
+  #mainContacto .formulario fieldset textarea {
+    width: 75%;
+    font-size: 2rem !important; }
   /*-----------FOOTER-------------*/
   footer {
     flex-direction: row;
@@ -409,10 +412,11 @@ footer {
     padding: 1% 2.5% 1% 2.5%; }
   main h3 {
     font-size: 2rem; }
+  /*-----------CONTACTO-----------*/
   #mainContacto .formulario fieldset input {
     width: 50%; }
-  /*-----------CONTACTO-----------*/
   #mainContacto .formulario fieldset textarea {
+    width: 75%;
     font-size: 2rem !important; }
   /*-----------FOOTER-------------*/
   footer {
@@ -434,7 +438,5 @@ footer {
   #mainContacto .tituloContacto:hover {
     text-shadow: 2px 2px 50px black;
     font-size: 7rem !important; }
-  #mainContacto .formulario fieldset textarea {
-    font-size: 2rem !important; }
-  footer {
+  #mainContacto footer {
     height: 125%; } }
