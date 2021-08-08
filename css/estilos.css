@@ -1,287 +1,255 @@
-
 /*--------------GLOBAL--------------------*/
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container-fluid {
-    padding: 0;
+  padding: 0;
 }
 
 body {
-    background: linear-gradient(45deg, rgb(85, 79, 71) 0%, rgb(31, 32, 41) 100%);
-    background-size: 400%;
-    display: grid;
-    grid-template-columns: 4fr 4fr 4fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-                        "h h h"
-                        "m m m"
-                        "f f f";
-    justify-content: space-between;
-    animation: bg-animation 5s infinite alternate;
-       
-         
-    }
+  background: linear-gradient(45deg, rgb(85, 79, 71) 0%, rgb(31, 32, 41) 100%);
+  background-size: 400%;
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "h h h"
+    "m m m"
+    "f f f";
+  justify-content: space-between;
+  animation: bg-animation 5s infinite alternate;
+}
 
-@keyframes  bg-animation{
-    0%{background-position: left;}
-    100%{background-position: right;}
-    
-
-    
-}  
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
 
 /*--------------FIN GLOBAL--------------------*/
 
-
 /*---------------HEADER----------------------*/
 
-.headerBootstrap{
-    grid-area: h;
-    width: 100%;
-    height: auto;
-    z-index: 10000;
-    box-shadow: 0px 3px 25px black;
+.headerBootstrap {
+  grid-area: h;
+  width: 100%;
+  height: auto;
+  z-index: 10000;
+  box-shadow: 0px 3px 25px black;
 }
 
 .bg-dark {
-    background-color: #1f1f1f!important;
+  background-color: #1f1f1f !important;
 }
 
-.navbar{
-    padding: 0 ;
+.navbar {
+  padding: 0;
 }
 
 .navbar-collapse {
-    flex-grow: 0;
-    justify-content: space-between;
+  flex-grow: 0;
+  justify-content: space-between;
 }
 
 .logo {
-    display: inline-block;
-    width: auto;
-    height: auto;
-    padding-left: 15%;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding-left: 15%;
 }
 
 .navbar-toggler {
-    margin-right: 5%;
+  margin-right: 5%;
 }
 
 .navbar-toggler-icon {
-    color: #dcb88a;
+  color: #dcb88a;
 }
 
 .navbar-dark .navbar-toggler {
-    color: #dcb88a;
+  color: #dcb88a;
 }
 
 .navbar-nav {
-    flex-direction: row;
-    justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover{
-    color: #dcb88a;
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #dcb88a;
 }
 .navbar-nav .nav-link {
-    padding-right: 2%;
-    font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif;
+  padding-right: 2%;
+  font-family: "ConstructaRegular", Georgia, "Times New Roman", Times, serif;
 }
-#navbarSupportedContent{
-    width: 100%;
+#navbarSupportedContent {
+  width: 100%;
 }
 .form-control {
-    margin-bottom: 1%;
-    margin-left: 2%;
-    
+  margin-bottom: 1%;
+  margin-left: 2%;
 }
-
-
 
 header .btn {
-    font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
-    letter-spacing: 0.2rem;
-    color: #dcb88a;
-    border-color: #dcb88a;
-    margin-right: 2%;
-    margin-bottom: 1%;
+  font-family: "ConstructaRegular", Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  color: #dcb88a;
+  border-color: #dcb88a;
+  margin-right: 2%;
+  margin-bottom: 1%;
 }
-
 
 .btn:hover {
-    background-color: #dcb88a;
-    border-color: #dcb88a;
-    color:  #1f1f1f;
+  background-color: #dcb88a;
+  border-color: #dcb88a;
+  color: #1f1f1f;
 }
 /*---------------FIN HEADER----------------------*/
-
 
 /*MAIN: está en estilo2.scss*/
 
 /*VIDEOS: está en estilo2.scss*/
 
-
 /*-----------BEBIDAS--------*/
 
-.btn-success{
-    background-color: transparent;
-    
+.btn-success {
+  background-color: transparent;
 }
 
-
-
 .card .btn {
-    font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
-    letter-spacing: 0.2rem;
-    color: #dcb88a;
-    border-color: #1f1f1f;
-    height: fit-content;
+  font-family: "ConstructaRegular", Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  color: #dcb88a;
+  border-color: #1f1f1f;
+  height: fit-content;
 }
 
 .card .btn-success {
-    color:  #1f1f1f;
-    background-color: #dcb88a;
-    border-color: #1f1f1f; 
+  color: #1f1f1f;
+  background-color: #dcb88a;
+  border-color: #1f1f1f;
 }
 
-.card .btn:hover{
-    color:  #1f1f1f;
-    background-color: #dcb88a;
-    border-color: #1f1f1f;
+.card .btn:hover {
+  color: #1f1f1f;
+  background-color: #dcb88a;
+  border-color: #1f1f1f;
 }
 
 h5 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .cardsgroup {
-    width: 75%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .card {
-    width: 50%;
-    height: auto;
-    margin-bottom: 5%;
-    margin-right: 3%;
-    box-shadow: 0px 1px 25px black;
-    
+  width: 50%;
+  height: auto;
+  margin-bottom: 5%;
+  margin-right: 3%;
+  box-shadow: 0px 1px 25px black;
 }
 
-
 /*-----------------------MERCH-----------------------*/
+.safari {
+  align-items: flex-start;
+}
 
 .slide {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .carousel-indicators [data-bs-target] {
-    background-color: rgb(146, 121, 84);
+  background-color: rgb(146, 121, 84);
 }
 
-
 .carousel-item img {
-    border-radius: 10%;
+  border-radius: 10%;
 }
 
 .h2Merch {
-    margin-top: 25px;
-    color:#dcb88a;
-    font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-    transition-duration: 1s;
+  margin-top: 25px;
+  color: #dcb88a;
+  font-family: "ConstructaRegular", Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  transition-duration: 1s;
 }
 
-.h2Merch:hover{
-    text-shadow: 2px 2px 50px black;
-    font-size: 3.5rem;
+.h2Merch:hover {
+  text-shadow: 2px 2px 50px black;
+  font-size: 3.5rem;
 }
 
 .fotosMerch {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .fotosMerch img {
-    max-width: 624px;
-    min-height: auto;
-    padding: 2px;
-    transition: transform .2s;
-    border-radius: 10%;
+  max-width: 624px;
+  min-height: auto;
+  padding: 2px;
+  transition: transform 0.2s;
+  border-radius: 10%;
 }
 
 .fotosMerch img:hover {
-    transform: scale(1.05);
-    z-index: 1000;
-    box-shadow: 0px 1px 25px black;
-   
+  transform: scale(1.05);
+  z-index: 1000;
+  box-shadow: 0px 1px 25px black;
 }
 
-
 a {
-    color:#dcb88a;
-    font-family: "ConstructaRegular", Georgia, 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-    letter-spacing: 0.06rem;
-    text-decoration: none;
+  color: #dcb88a;
+  font-family: "ConstructaRegular", Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  text-decoration: none;
 }
 
 /*---------------FIN MERCH----------------------*/
 
-
 /*CONTACTO: está en estilo2.scss*/
-
-
 
 /*FOOTER: está en estilo2.scss*/
 
-
-
 /*-------------------------------------MEDIA QUERIES-------------------------------*/
-
-
 
 /*------------TABLETS-------------------*/
 
 @media only screen and (min-width: 576px) and (max-width: 992px) {
-
-/*----------HEADER-------------*/
-.navbar-nav .nav-link {
+  /*----------HEADER-------------*/
+  .navbar-nav .nav-link {
     font-size: 1.75rem;
-}
-
-
+  }
 }
 /*------------FIN TABLETS-------------------*/
 
-
-
 /*------------ESCRITORIO-------------------*/
 @media only screen and (min-width: 992px) and (max-width: 1920px) {
+  /*------------------HEADER-------------*/
 
-/*------------------HEADER-------------*/
-
-.navbar-nav .nav-link {
+  .navbar-nav .nav-link {
     font-size: 2rem;
+  }
+
+  /*------------FIN ESCRITORIO-------------------*/
 }
-
-
-/*------------FIN ESCRITORIO-------------------*/
-
-
-}
-
